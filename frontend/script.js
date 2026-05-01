@@ -1,4 +1,5 @@
 const API = "https://notemind-backend-jgd4.onrender.com";
+
 /* ═══════════════════════════════════════════════════
    NoteMind — script.js
    Full app logic: notes, AI simulation, PDF, markdown,
@@ -615,9 +616,9 @@ document.getElementById('pdfUpload').addEventListener('change', async (e) => {
   const formData = new FormData();
   formData.append("file", file);
 
-  const res = await fetch("http://127.0.0.1:8000/upload-pdf", {
-    method: "POST",
-    body: formData
+  const res = await fetch(`${API}/upload-pdf`, {
+  method: "POST",
+  body: formData
 });
 
   const data = await res.json();
