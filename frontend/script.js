@@ -1,3 +1,4 @@
+const API = "https://notemind-backend-jgd4.onrender.com";
 /* ═══════════════════════════════════════════════════
    NoteMind — script.js
    Full app logic: notes, AI simulation, PDF, markdown,
